@@ -29,7 +29,19 @@ Alternatively, you can install it globally:
   go install github.com/yourusername/gator@latest
   ```
 
-Make sure you have [Go](https://golang.org/dl/) installed on your system before proceeding with the installation.
+Make sure you have [Go](https://golang.org/dl/) installed on your system as well as a local Postgres database before proceeding with the installation.
+
+## Config
+
+Create a `.gatorconfig.json` file in your home directory with the following structure:
+
+```json
+{
+  "db_url": "postgres://username:@localhost:5432/database?sslmode=disable"
+}
+```
+
+Replace the values with your database connection string.
 
 ## Commands
 
